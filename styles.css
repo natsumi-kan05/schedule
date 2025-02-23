@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8fa;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 100vh;
+    text-align: center;
+}
+
+/* フィルターボタンのコンテナ（固定配置） */
+#filter-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff8fa;
+    opacity: 0.93;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header .title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: flex;
+    height: 1em;
+    align-items: center;
+}
+
+/* フィルターボタンの配置 */
+#filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* フィルターボタンのスタイル */
+button {
+    font-family: 'DM Serif Display', serif;
+    background-color: #FFF8FA;
+    border: 1px solid black;
+    padding: 3px 6px;
+    font-size: min(16px, 3.4vw);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: border-color 0.3s, color 0.3s, background-color 0.2s;
+}
+
+button:hover {
+    border-color: #aaa;
+    color: #aaa;
+}
+
+.filter-btn.active {
+    background-color: #d63384;
+    color: white;
+    border: 1px solid #d63384;
+}
+
+/* スケジュールリスト */
+#schedule-list {
+    max-width: 700px;
+    margin: 80px auto 0;
+    text-align: left;
+    padding-top: 10px;
+}
+
+/* スケジュールアイテムのスタイル */
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.first-item {
+    border-top: 1px solid #000;  /* 最初のアイテムにボーダーを追加 */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* 日付のスタイル */
+.date {
+    font-family: serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #c51477;
+    min-width: 100px;
+    text-align: left;
+}
+
+/* カテゴリのスタイル */
+.category {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1em;
+    color: #333;
+    min-width: 70px;
+    text-align: left;
+}
+
+/* タイトルのスタイル */
+.title {
+    font-family: "Yu Mincho";
+    flex-grow: 1;
+    font-size: 1em;
+    color: #333;
+}
+
+/* 日付とカテゴリをまとめるコンテナ */
+.date-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* スマホサイズでは縦配置に変更 */
+@media (max-width: 600px) {
+    .date-category {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.schedule-item:hover .date,
+.schedule-item:hover .category,
+.schedule-item:hover .title,
+.schedule-item:hover .heart {
+    color: #c51477;
+}
+
+/* フッターのスタイル */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff8fa;
+    opacity: 0.93;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#today {
+    border: 3px double black; /* Today だけ二重線 */
+}
+
+.month-btn:hover,
+#today:hover {
+    border-color: #aaa;
+    color: #aaa;
+}
+

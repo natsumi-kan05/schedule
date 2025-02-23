@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スケジュール一覧</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- フィルターボタン + SCHEDULE 固定エリア -->
+    <div id="filter-container">
+        <div id="header">
+            <span class="title">SCHEDULE</span>
+            <div id="filter-buttons">
+                <button class="filter-btn active" data-category="ALL">ALL</button>
+                <button class="filter-btn" data-category="Live">Live</button>
+                <button class="filter-btn" data-category="Event">Event</button>
+                <button class="filter-btn" data-category="TV">TV</button>
+                <button class="filter-btn" data-category="Radio">Radio</button>
+                <button class="filter-btn" data-category="Media">Media</button>
+                <button class="filter-btn" data-category="Web">Web</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- スケジュールリスト -->
+    <div id="schedule-list"></div>
+
+    <!-- フッター（ページ下部固定） -->
+    <div id="footer">
+        <button class="month-btn" id="prev-month"></button>
+        <button class="month-btn" id="current-month"></button>
+        <button class="month-btn" id="today">Today</button>
+        <button class="month-btn" id="next-month"></button>
+        <button class="month-btn" id="next-next-month"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
