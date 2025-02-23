@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Noto Serif", "Noto Serif JP", "Noto Serif CJK JP",
+                 "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", 
+                 "MS PMincho", serif;
     background-color: #fff8fa;
     margin: 0;
     padding: 20px;
@@ -97,7 +101,7 @@ a {
 
 /* 日付のスタイル */
 .date {
-    font-family: serif;
+    font-family: 'Libre Caslon Display', serif;
     font-size: 1em;
     font-weight: bold;
     color: #c51477;
@@ -116,7 +120,6 @@ a {
 
 /* タイトルのスタイル */
 .title {
-    font-family: "Yu Mincho";
     flex-grow: 1;
     font-size: 1em;
     color: #333;
