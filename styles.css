@@ -54,7 +54,7 @@ button {
     background-color: #FFF8FA;
     border: 1px solid black;
     padding: 3px 6px;
-    font-size: min(16px, 3.4vw);
+    font-size: min(16px, 4.2vw);
     cursor: pointer;
     border-radius: 3px;
     transition: border-color 0.3s, color 0.3s, background-color 0.2s;
@@ -137,6 +137,9 @@ a {
     .date-category {
         flex-direction: column;
         align-items: flex-start;
+    }
+    #filter-buttons {
+        gap: 4px;
     }
 }
 
